@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-------Pjesa e kokes se nje dokumenti HTML ku vendoset titulli dhe Metadatat--------->
+<head>
+  <title>Bootstrap Exercise 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!------Compilimi i CSS -------->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!------Libraria e JQuery -------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!------Compilimi i JS -------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-------Linku i Ikonave--------->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<!-------Pjesa e trupit te HTML--------->
+<body>
+<!-------Krijimi i Barit te Navigimit - Responsive Form--------->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+<!-------Krijimi i linqeve te barit te navigimit- Responsive-------->
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+       <!-------Link i aktiv--------->
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <!-------Link i funksionueshem--------->
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <!-------Link i pafunksionueshem--------->
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+      <!-------Krijimi i menuse Dropdown -Responsive --------->
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </li>
+    </ul>
+    <!-------Krijimi i barit te kerkimit - Responsive--------->
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<!-------Krijimi i nje jumbotron i cili ve ne pah pjeset me te rendesishme te faqes- Responsive-------->
+<div class="jumbotron jumbotron-fluid">
+ <div class="container">
+  <h1 class="display-4 font-weight-normal mx-3">Hello, world!</h1>
+  <p class="mx-3">This is a template for a simple marketing or information website. It includes a large callout called a jumbotrom and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+  <!-------Krijimi i butonit Learn more dhe vendosja e icones se shigjetave--------->
+  <p class="lead">
+    <a class="btn btn-primary btn-lg mx-3" href="#" role="button">Learn more <i class='fas fa-angle-double-right' style="font-size: 12px;"></i></a>
+  </p>
+ </div>
+</div>
+<!-------Krijimi i nje Container, me nje rresht dhe 3 kolona - Responsive-------->
+<div class="container border-bottom">
+  <div class="row mx-1" >
+<!-------Kolona e pare--------->
+    <div class="col-sm">
+      <h3> Heading</h3>
+      <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut dictum quam, et faucibus mauris. Cras ornare at massa id molestie. Mauris pharetra nunc enim, in posuere urna lobortis non. Duis viverra placerat ante sit amet blandit. </p>
+      <p class="lead">
+    <a class="btn btn-secondary btn-sm" href="#" role="button">View details <i class='fas fa-angle-double-right' style="
+    font-size: 7px"></i></a>
+    </div>
+<!-------Kolona e dyte--------->
+    <div class="col-sm">
+    <h3> Heading</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut dictum quam, et faucibus mauris. Cras ornare at massa id molestie. Mauris pharetra nunc enim, in posuere urna lobortis non. Duis viverra placerat ante sit amet blandit.</p>
+      <p class="lead">
+    <a class="btn btn-secondary btn-sm" href="#" role="button">View details <i class='fas fa-angle-double-right' style="
+    font-size: 7px"></i></a>
+    </div>
+<!-------Kolona e trete--------->
+    <div class="col-sm">
+      <h3> Heading</h3>
+      <p>Curabitur a risus in metus rhoncus vehicula. Etiam porttitor sagittis sem, id accumsan odio pretium eu. Suspendisse non sem vel felis elementum luctus at nec dolor. Aliquam pretium euismod semper. Maecenas non velit a eros faucibus porttitor non non justo. Nulla ac faucibus leo. </p>
+      <p class="lead">
+    <a class="btn btn-secondary btn-sm" href="#" role="button">View details <i class='fas fa-angle-double-right' style="
+    font-size: 7px"></i></a>
+    </div>
+    </div>
+<!-------Vendosja e nje vije horizontale --------->
+    <hr class="my-4">
+    <!-------Vendosja e te drejtave te autorit--------->
+    <div class="footer-copyright text-left mx-2">© Company 2017-2018 EDisha</div>  
+
+  <!-------Mbyllja e tagut te trupit---------> 
+</body>
+<!-------Mbyllja e documentit HTML--------->
+</html>
+
+
